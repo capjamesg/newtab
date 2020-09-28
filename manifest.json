@@ -1,0 +1,15 @@
+{
+  "name": "Happy New Tab",
+  "description": "A custom new tab page to keep me going.",
+  "version": "0.0.0.1",
+  "manifest_version": 2,
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": [
+      "storage"
+  ]
+}
