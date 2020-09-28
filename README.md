@@ -8,11 +8,11 @@ A Firefox extension that displays a new tab page with my name and some useful li
 
 ## To-Do
 
-[ ] Write installation instructions
-[ ] Show a random day of the year
-[ ] Think about what images to show, if any
-[ ] Add a countdown to Christmas
-[ ] Think about a year progress calendar
+- [ ] Write installation instructions
+- [ ] Show a random day of the year
+- [ ] Think about what images to show, if any
+- [ ] Add a countdown to Christmas
+- [ ] Think about a year progress calendar
 
 ## Technologies
 
