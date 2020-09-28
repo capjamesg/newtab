@@ -4,7 +4,7 @@ A Firefox extension that displays a new tab page with my name and some useful li
 
 ## Screenshot
 
-![A screenshot of the new tab extension](https://github.com/capjamesg/newtab/blob/master/screenshot.png?raw=true
+![A screenshot of the new tab extension](https://github.com/capjamesg/newtab/blob/master/screenshot.png?raw=true)
 
 ## To-Do
 
