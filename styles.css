@@ -8,10 +8,16 @@ ul {
 	padding: 0;
 }
 
-li {
+li, button {
 	border-radius: 10px;
 	padding: 10px;
 	display: inline-block;
+}
+
+button {
+	border: none;
+	color: dimgrey;
+	background-color: hotpink;
 }
 
 li a {
@@ -19,7 +25,7 @@ li a {
 }
 
 blockquote {
-	margin: 0;
+	margin-left: 0;
 }
 
 h1 {
