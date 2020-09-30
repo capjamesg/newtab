@@ -1,10 +1,12 @@
 {
   "name": "Happy New Tab",
   "description": "A custom new tab page to keep me going.",
-  "version": "0.0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
-  "icons": {
-    "128": "icon_128.png"
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "jamesg-new-tab@jamesg.blog"
+    }
   },
   "chrome_url_overrides": {
     "newtab": "index.html"
