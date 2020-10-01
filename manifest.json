@@ -1,7 +1,7 @@
 {
   "name": "Happy New Tab",
   "description": "A custom new tab page to keep me going.",
-  "version": "0.0.2",
+  "version": "1.0.1",
   "manifest_version": 2,
   "browser_specific_settings": {
     "gecko": {
