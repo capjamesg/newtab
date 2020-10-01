@@ -19,36 +19,25 @@ function getDays() {
 
 	get_day.textContent = days[current_date.getDay()];
 
-	// Calculate days until birthday / International Coffee Day
+	// Calculate days until Halloween
 
 	var current_date = new Date();
-	var birthday = new Date(current_date.getFullYear(), 9, 1);
 
-	var days_until_birthday = Math.trunc((birthday.getTime() - current_date.getTime()) / (1000 * 3600 * 24));
+	var countdown_display = document.getElementById("countdown_display");
 
-	var until_birthday = document.getElementById("until_birthday");
+	var celebrating_date = new Date(current_date.getFullYear(), 10, 31);
 
-	var countdown = days_until_birthday;
+	var days_until_celebrating_date = Math.trunc((celebrating_date.getTime() - celebrating_date.getTime()) / (1000 * 3600 * 24));
+
+	var countdown = days_until_celebrating_date + 1;
 
 	if (countdown > 1) {
-		until_birthday.textContent = `There are ${countdown} days left to go until your birthday and International Coffee Day.`;
+		until_birthday.textContent = `There are ${countdown} days left to go until Halloween. 🎃`;
 	} else if (countdown == 1) {
-		until_birthday.textContent = `There is ${countdown} day left to go until your birthday and International Coffee Day.`;
+		until_birthday.textContent = `There is ${countdown} day left to go until Halloween. 🎃`;
 	} else {
-		until_birthday.textContent = `Happy birthday and International Coffee Day! ☕`
+		until_birthday.textContent = `Happy Halloween! 🎃`
 	}
-
-	// var countdown_display = document.getElementById("countdown_display");
-	// var christmas = new Date(current_date.getFullYear(), 9, 1);
-	// var days_until_christmas = Math.trunc((christmas.getTime() - current_date.getTime()) / (1000 * 3600 * 24));
-
-	// var countdown = days_until_christmas + 1;
-
-	// if (countdown > 1) {
-	// 	until_birthday.textContent = `There are ${countdown} days`;
-	// } else {
-	// 	until_birthday.textContent = `There is ${countdown} day`;
-	// }
 }
 
 getDays();
