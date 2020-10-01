@@ -28,12 +28,14 @@ function getDays() {
 
 	var until_birthday = document.getElementById("until_birthday");
 
-	var countdown = days_until_birthday + 1;
+	var countdown = days_until_birthday;
 
 	if (countdown > 1) {
-		until_birthday.textContent = `There are ${countdown} days`;
+		until_birthday.textContent = `There are ${countdown} days left to go until your birthday and International Coffee Day.`;
+	} else if (countdown == 1) {
+		until_birthday.textContent = `There is ${countdown} day left to go until your birthday and International Coffee Day.`;
 	} else {
-		until_birthday.textContent = `There is ${countdown} day`;
+		until_birthday.textContent = `Happy birthday and International Coffee Day! ☕`
 	}
 
 	// var countdown_display = document.getElementById("countdown_display");
@@ -85,10 +87,8 @@ function showQuote(result) {
 
 		var day_as_json = JSON.parse(new_request.responseText);
 
-		console.log(day_as_json);
-
 		var date_with_padded_zero = ("0" + current_date.getDate()).slice(-2);
-		var month_with_padded_zero = ("0" + current_date.getMonth()).slice(-2);
+		var month_with_padded_zero = ("0" + (current_date.getMonth() + 1)).slice(-2);
 
 		var to_retrieve = `${date_with_padded_zero}/${month_with_padded_zero}`;
 
@@ -117,3 +117,5 @@ function getQuote() {
 }
 
 getQuote();
+
+browser.storage.local.clear();
