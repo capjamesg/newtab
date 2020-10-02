@@ -25,18 +25,18 @@ function getDays() {
 
 	var countdown_display = document.getElementById("countdown_display");
 
-	var celebrating_date = new Date(current_date.getFullYear(), 10, 31);
+	var celebrating_date = new Date(current_date.getFullYear(), 9, 31);
 
-	var days_until_celebrating_date = Math.trunc((celebrating_date.getTime() - celebrating_date.getTime()) / (1000 * 3600 * 24));
+	var days_until_celebrating_date = Math.trunc((celebrating_date.getTime() - current_date.getTime()) / (1000 * 3600 * 24));
 
 	var countdown = days_until_celebrating_date + 1;
 
 	if (countdown > 1) {
-		until_birthday.textContent = `There are ${countdown} days left to go until Halloween. 🎃`;
+		countdown_display.textContent = `There are ${countdown} days left to go until Halloween. 🎃`;
 	} else if (countdown == 1) {
-		until_birthday.textContent = `There is ${countdown} day left to go until Halloween. 🎃`;
+		countdown_display.textContent = `There is ${countdown} day left to go until Halloween. 🎃`;
 	} else {
-		until_birthday.textContent = `Happy Halloween! 🎃`
+		countdown_display.textContent = `Happy Halloween! 🎃`
 	}
 }
 
